@@ -127,10 +127,23 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
 }
 
 .service-item {
+    flex: 1 1 calc(33% - 40px);
+    max-width: calc(33% - 40px);
     margin: 40px 0;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 /* 案例展示 */
