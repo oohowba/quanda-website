@@ -131,6 +131,7 @@ nav {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
+    align-items: stretch; /* 確保所有卡片具有相同的高度 */
 }
 
 .service-item {
@@ -140,7 +141,11 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 .service-item img {
@@ -155,8 +160,8 @@ nav {
 }
 
 .service-item p {
-    flex-grow: 1;
     text-align: center;
+    flex-grow: 1;
 }
 
 /* 案例展示 */
