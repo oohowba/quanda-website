@@ -130,18 +130,17 @@ nav {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-around;
-    align-items: flex-start; /* 確保所有項目頂部對齊 */
+    justify-content: space-between;
 }
 
 .service-item {
-    flex: 1 1 calc(33% - 40px);
-    max-width: calc(33% - 40px);
-    margin: 40px 0;
+    flex: 1 1 calc(33.33% - 40px);
+    max-width: calc(33.33% - 40px);
+    margin: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 450px; /* 設置固定高度，確保卡片對齊 */
+    height: auto;
 }
 
 .service-item img {
@@ -156,7 +155,8 @@ nav {
 }
 
 .service-item p {
-    flex-grow: 1; /* 讓描述部分填滿剩餘空間，保持卡片一致高度 */
+    flex-grow: 1;
+    text-align: center;
 }
 
 /* 案例展示 */
