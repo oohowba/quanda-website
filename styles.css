@@ -127,12 +127,16 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-between;
 }
 
 .service-item {
+    flex: 1 1 calc(33% - 40px);
+    max-width: calc(33% - 40px);
+    margin: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,6 +145,7 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     border-radius: 10px;
+    min-height: 500px; /* 設置最小高度，確保卡片高度一致 */
 }
 
 .service-item img {
@@ -157,6 +162,7 @@ nav {
 .service-item p {
     text-align: center;
     flex-grow: 1;
+    margin-bottom: 20px; /* 增加底部空間，使所有內容對齊 */
 }
 
 /* 案例展示 */
