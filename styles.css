@@ -190,16 +190,31 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.portfolio-carousel {
+    display: flex;
+    gap: 20px;
 }
 
 .portfolio-item {
-    margin: 40px 0;
+    display: inline-block;
+    width: 300px;
+    flex-shrink: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
 }
 
 .portfolio-item img {
     width: 100%;
-    max-width: 800px;
+    height: auto;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 /* 聯絡我們 */
