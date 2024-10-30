@@ -127,17 +127,12 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    justify-content: space-between;
-    align-items: stretch; /* 確保所有卡片具有相同的高度 */
 }
 
 .service-item {
-    flex: 1 1 calc(33.33% - 40px);
-    max-width: calc(33.33% - 40px);
-    margin: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
