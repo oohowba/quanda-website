@@ -127,25 +127,22 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
 }
 
 .service-item {
-    flex: 1 1 calc(33% - 40px);
-    max-width: calc(33% - 40px);
-    margin: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     border-radius: 10px;
-    min-height: 500px; /* 設置最小高度，確保卡片高度一致 */
+    min-height: 550px; /* 設置卡片的最小高度，保持一致的視覺效果 */
 }
 
 .service-item img {
@@ -157,6 +154,7 @@ nav {
 
 .service-item h3 {
     margin-bottom: 10px;
+    font-size: 1.5rem;
 }
 
 .service-item p {
