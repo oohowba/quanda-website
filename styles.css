@@ -187,22 +187,21 @@ nav {
 .portfolio-section {
     background-color: #fff;
     padding: 100px 20px;
-    max-width: 1200px;
+    max-width: 100%; /* 設定寬度為100%，確保水平滾動可以顯示 */
     margin: 0 auto;
     text-align: center;
-    overflow-x: auto;
-    white-space: nowrap;
+    overflow-x: auto; /* 啟用橫向滾動條，當內容超出容器寬度時可滾動 */
+    white-space: nowrap; /* 確保卡片不會自動換行 */
 }
 
 .portfolio-carousel {
-    display: flex;
+    display: inline-flex; /* 使用 inline-flex 確保卡片可以橫向排列 */
     gap: 20px;
 }
 
 .portfolio-item {
-    display: inline-block;
     width: 300px;
-    flex-shrink: 0;
+    flex-shrink: 0; /* 防止卡片壓縮 */
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
